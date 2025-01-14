@@ -1,0 +1,16 @@
+The following solution uses the `:not()` pseudo-class to correctly style list items. The `:not()` selector improves the readability and maintainability of the solution by clearly indicating what items should *not* be styled in a certain way. 
+
+```css
+li {
+  color: blue;
+}
+
+nav li {
+  color: red;
+}
+
+/* Solution using :not() pseudo-class */
+li:not(nav li) {
+  color: blue;
+}
+```
